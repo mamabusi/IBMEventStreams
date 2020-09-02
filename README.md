@@ -23,7 +23,7 @@ c. Select the Lite plan on the service instance page.
 
 d. Enter a name for your service. You can use the default value.
 
-e. Click Create. The Event Streams Getting started page opens.
+e. Click Create. The Event Streams service instance page opens.
 
 ## Step 3: Create credentials for the Events Streams service instance.
 
