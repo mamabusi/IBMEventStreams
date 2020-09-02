@@ -20,15 +20,19 @@ a. Log in to the [IBM Cloud](https://cloud.ibm.com/) console.
 ![IBM Cloud](images/1_cloudhome.png)
 
 b. Click the [Event Streams service](https://cloud.ibm.com/catalog/services/event-streams) in the Catalog.
-![IBM Cloud](images/2_catalog.png)
+
+![EventStreams](images/2_catalog.png)
 
 c. Select the Lite plan on the service instance page.
-![IBM Cloud](images/3_createinstance.png)
+
+![Service instance](images/3_createinstance.png)
 
 d. Enter a name for your service. You can use the default value.
 
 e. Click Create. The Event Streams service instance page opens.
-![IBM Cloud](images/4_createinstance copy.png)
+
+![EventstreamHome](images/5_eventstreamhome.png)
+
 
 ## Step 3: Create credentials for the Events Streams service instance.
 
@@ -36,15 +40,22 @@ To allow the sample application to access your topic, we need to create some cre
 
 a. Go to Service credentials in the navigation pane.
 
+![Credentials](images/6_servicecredentials1.png)
+
 b. Click New credential.
 
-c. Give the credential a name so you can identify its purpose later. You can accept the default value.
+![Credentials2](images/7_servicecredentials2.png)
 
-d. Give the credential the Manager role so that it can access the topics, and create them if necessary.
+ -Give the credential a name so you can identify its purpose later. You can accept the default value.
 
-e. Click Add. The new credential is listed in the table in Service credentials.
+ -Give the credential the Manager role so that it can access the topics, and create them if necessary.
 
-f. Click View credentials to see the **_api_key_** and **_kafka_brokers_sasl_** values.
+ -Click Add. The new credential is listed in the table in Service credentials.
+
+
+c. Click View credentials to see the **_api_key_** and **_kafka_brokers_sasl_** values.
+
+![Credentials3](images/8_servicecredentials3.png)
 
 ## STEP 4: Clone the Github repository for the sample application
 
