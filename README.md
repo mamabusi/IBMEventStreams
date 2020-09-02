@@ -25,7 +25,7 @@ b. Click the [Event Streams service](https://cloud.ibm.com/catalog/services/even
 
 c. Select the Lite plan on the service instance page.
 
-![Service instance](images/3_createinstance.png)
+![Service instance](images/3_createInstance.png)
 
 d. Enter a name for your service. You can use the default value.
 
