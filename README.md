@@ -72,4 +72,30 @@ Then, use the **_api_key_** from the Service credentials created in Step 3. **_-
 
 b. An INFO No messages consumed is displayed when the consuming application is running, but there is no data being consumed.
 
+## STEP 6: Run the producing application
+
+a. Open a new command line window and change into the **_kafka-java-console-sample_** directory.
+
+ `cd event-streams-samples/kafka-java-console-sample`
+ 
+b. start the sample producing application from the command line: 
+
+ `java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -producer`
+ 
+The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar_** part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
+
+Use the **_kafka_brokers_sasl_** from the Service credentials created in Step 3. 
+
+The **_kafka_brokers_sasl_** must be formatted as "host:port,host2:port2".
+Format the contents of **_kafka_brokers_sasl_** in a text editor before entering it in the command line.
+
+Use the **_api_key_** from the Service credentials created in Step 3. **_-producer_** specifies that the producer should start.
+
+
+## DONE!
+When the producer starts, messages are produced to the topic. Messages are then consumed from the topic by the consuming application. You can verify the successful flow of messages when you see:
+ `INFO Message consumed` on the consumer application. 
+
+The sample runs indefinitely until you stop it. To stop the process, run an exit command **_Ctrl+C_**
+
 
