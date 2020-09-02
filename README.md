@@ -39,6 +39,8 @@ d. Give the credential the Manager role so that it can access the topics, and cr
 
 e. Click Add. The new credential is listed in the table in Service credentials.
 
-f. Click View credentials to see the api_key and kafka_brokers_sasl values.
+f. Click View credentials to see the **_api_key_** and **_kafka_brokers_sasl_** values.
+
+
 
 
