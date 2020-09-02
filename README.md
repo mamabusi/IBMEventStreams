@@ -16,7 +16,7 @@ The following needs to be installed:
 ## Step 2: Create an Event Streams service instance.
 
 a. Log in to the [IBM Cloud](https://cloud.ibm.com/) console.
-[IBM Cloud](images/1_cloudhome.png)
+
 ![IBM Cloud](images/1_cloudhome.png)
 
 b. Click the [Event Streams service](https://cloud.ibm.com/catalog/services/event-streams) in the Catalog.
