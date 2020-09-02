@@ -41,6 +41,35 @@ e. Click Add. The new credential is listed in the table in Service credentials.
 
 f. Click View credentials to see the **_api_key_** and **_kafka_brokers_sasl_** values.
 
+## STEP 4: Clone the Github repository for the sample application
 
+a. The sample application is stored in Github. Clone the event-streams-samples repository by running the clone command from the command line.
+
+ `git clone https://github.com/ibm-messaging/event-streams-samples.git`
+
+b. When the repository is cloned, from the command line change into the kafka-java-console-sample directory.
+
+`cd event-streams-samples/kafka-java-console-sample`
+
+c. Build the contents of the kafka-java-console-sample directory.
+
+`gradle clean && gradle build`
+
+## STEP 5: Run the consuming application
+
+a. Start the sample consuming application from the command line: replacing the kafka_brokers_sasl and api_key values.
+
+`java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -consumer`
+
+The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar**_ part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
+
+Use the **_kafka_brokers_sasl_** from the Service credentials created in Step 2. We recommend using all the kafka_brokers_sasl listed in the Service credentials that you created.
+
+The **_kafka_brokers_sasl_** must be formatted as "host:port,host2:port2".
+Format the contents of kafka_brokers_sasl in a text editor before entering it in the command line.
+
+Then, use the **_api_key_** from the Service credentials created in Step 3. **_-consumer_** specifies that the consumer should start.
+
+b. An INFO No messages consumed is displayed when the consuming application is running, but there is no data being consumed.
 
 
