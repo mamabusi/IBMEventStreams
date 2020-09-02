@@ -83,7 +83,7 @@ a. Start the sample consuming application from the command line: replacing the k
     
  ![consumer](images/consumerrun.png)   
 
-The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar**_ part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
+The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar_** part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
 
 Use the **_kafka_brokers_sasl_** from the Service credentials created in Step 2. We recommend using all the kafka_brokers_sasl listed in the Service credentials that you created.
 
