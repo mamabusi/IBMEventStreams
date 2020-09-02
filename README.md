@@ -20,12 +20,15 @@ a. Log in to the [IBM Cloud](https://cloud.ibm.com/) console.
 ![IBM Cloud](images/1_cloudhome.png)
 
 b. Click the [Event Streams service](https://cloud.ibm.com/catalog/services/event-streams) in the Catalog.
+![IBM Cloud](images/2_catalog.png)
 
 c. Select the Lite plan on the service instance page.
+![IBM Cloud](images/3_createinstance.png)
 
 d. Enter a name for your service. You can use the default value.
 
 e. Click Create. The Event Streams service instance page opens.
+![IBM Cloud](images/4_createinstance copy.png)
 
 ## Step 3: Create credentials for the Events Streams service instance.
 
