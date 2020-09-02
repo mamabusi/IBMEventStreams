@@ -61,21 +61,27 @@ c. Click View credentials to see the **_api_key_** and **_kafka_brokers_sasl_** 
 
 a. The sample application is stored in Github. Clone the event-streams-samples repository by running the clone command from the command line.
 
- `git clone https://github.com/ibm-messaging/event-streams-samples.git`
+    `git clone https://github.com/ibm-messaging/event-streams-samples.git`
+ 
+![gitclone](images/gitclone.png) 
 
 b. When the repository is cloned, from the command line change into the kafka-java-console-sample directory.
 
-`cd event-streams-samples/kafka-java-console-sample`
+    `cd event-streams-samples/kafka-java-console-sample`
 
 c. Build the contents of the kafka-java-console-sample directory.
 
-`gradle clean && gradle build`
+    `gradle clean && gradle build`
+
+![gradle](images/gradlecleanbuild.png)
 
 ## STEP 5: Run the consuming application
 
 a. Start the sample consuming application from the command line: replacing the kafka_brokers_sasl and api_key values.
 
-`java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -consumer`
+    `java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -consumer`
+    
+ ![consumer](images/consumerrun.png)   
 
 The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar**_ part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
 
@@ -92,11 +98,13 @@ b. An INFO No messages consumed is displayed when the consuming application is r
 
 a. Open a new command line window and change into the **_kafka-java-console-sample_** directory.
 
- `cd event-streams-samples/kafka-java-console-sample`
+    `cd event-streams-samples/kafka-java-console-sample`
  
 b. start the sample producing application from the command line: 
 
- `java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -producer`
+    `java -jar ./build/libs/kafka-java-console-sample-2.0.jar <kafka_brokers_sasl> <api_key> -producer`
+ 
+  ![producer](images/producerrun.png)  
  
 The **_java -jar ./build/libs/kafka-java-console-sample-2.0.jar_** part of the command identifies the locations of the .JAR file to run within the cloned repository. You do not need to change this.
 
@@ -112,6 +120,8 @@ Use the **_api_key_** from the Service credentials created in Step 3. **_-produc
 When the producer starts, messages are produced to the topic. Messages are then consumed from the topic by the consuming application. You can verify the successful flow of messages when you see:
  `INFO Message consumed` on the consumer application. 
 
+ ![consumed](images/consumed.png)  
+ 
 The sample runs indefinitely until you stop it. To stop the process, run an exit command **_Ctrl+C_**
 
 
